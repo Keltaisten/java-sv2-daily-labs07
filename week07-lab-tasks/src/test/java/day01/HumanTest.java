@@ -23,6 +23,13 @@ class HumanTest {
     }
 
     @Test
+    void testCheckNameWithNull(){
+        IllegalArgumentException iae = assertThrows(IllegalArgumentException.class,
+                () -> new Human(null, 32));
+        assertEquals("Nem adtad meg a kereszt vagy vezetéknevet", iae.getMessage());
+    }
+
+    @Test
     void testCheckTheAgeWithGoodName(){
         String name = human.checkName("John Doe");
         assertEquals("John Doe", name);
