@@ -14,6 +14,9 @@ public class CourierFileManager {
                 String[] stringArray = s.split(" ");
                 Ride ride = new Ride(Integer.parseInt(stringArray[0]),Integer.parseInt(stringArray[1]),
                         Integer.parseInt(stringArray[2]));
+//                System.out.println(Integer.parseInt(stringArray[0]));
+//                System.out.println(Integer.parseInt(stringArray[1]));
+
                 courier.addRide(ride);
             }
         }catch(IOException ioe){

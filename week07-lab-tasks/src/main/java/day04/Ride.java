@@ -22,4 +22,12 @@ public class Ride {
     public int getRideInKm() {
         return rideInKm;
     }
+
+    @Override
+    public String toString() {
+        return "Ride: " +
+                "dayOfWeek = " + dayOfWeek +
+                ", numberOfRide = " + numberOfRide +
+                ", rideInKm = " + rideInKm;
+    }
 }
