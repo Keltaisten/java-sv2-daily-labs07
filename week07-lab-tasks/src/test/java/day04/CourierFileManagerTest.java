@@ -20,6 +20,5 @@ class CourierFileManagerTest {
     void crateCourierByFileTest2() {
         courier = courierFileManager.crateCourierByFile(Paths.get("src/test/resources/rides.txt"));
         assertEquals("Ride: dayOfWeek = 2, numberOfRide = 1, rideInKm = 10", courier.getRides().get(2).toString());
-
     }
 }
